@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* .front-image and child elements */
+
+.front-image {
+	background-color: #2f323b;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.front-image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 0;
+	/* Lower z-index */
+	container: cover;
+}
+
+/* .utopia-header styling */
+.utopia-header {
+	position: absolute;
+	top: 5px;
+	/* Adjust positioning as needed */
+	left: 50%;
+	/* Center the header horizontally */
+	transform: translateX(-50%);
+	z-index: 1;
+	/* Higher z-index */
+}
+
+.utopia-header h1 {
+	font-size: 70px;
+	font-family: Italiana;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+}
+
+.navlinks {
+	margin-left: 350px;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	/* Position right below the header, adjust values as needed */
+	left: 50%;
+	/* Center the navigation bar horizontally */
+	transform: translateX(-50%);
+	z-index: 1;
+	/* Ensure it's on top of the image */
+}
+
+/* Styling the navigation links */
+.navlinks a {
+	color: rgb(255, 255, 255);
+	/* White color for visibility */
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "Lacquer", sans-serif;
+	margin: 0 50px;
+	/* Adjust margin between links as needed */
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+	/* Make the body fill the viewport height */
+	display: flex;
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+}
+
+.container {
+	width: 100%;
+	/* Adjust width as needed */
+	max-width: 1200px;
+	/* Maximum width for larger screens */
+	height: 500px;
+	margin-top: 80px;
+	background-color: #191a1f;
+	padding: 20px;
+	border-radius: 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 24px;
+}
+
+header {
+	margin-left: 220px;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-family: Italiana;
+	color: #fff;
+}
+
+.form-group {
+	margin-left: 105px;
+}
+/* CSS for input[type="tel"] */
+/* CSS for input[type="tel"] */
+#phone {
+  margin-top: 20px;
+  width: 350px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 10px;
+  background-color: #2f323b;
+  border: 1px solid white;
+  margin-bottom: 10px;
+}
+
+/* Optionally, if you want to style the label */
+label[for="phone"] {
+  color: white; /* Set label color */
+  /* Add other label styles as needed */
+}
+
+
+input[type="text"] {
+	margin-top: 20px;
+
+	width: 350px;
+	/* Make the text input fill the width of its container */
+	height: 40px;
+	padding: 10px;
+	font-size: 16px;
+	color: white;
+	border-radius: 10px;
+	background-color: #2f323b;
+	border: 1px solid white;
+	margin-bottom: 10px;
+	/* Add margin bottom to create spacing between inputs */
+}
+
+input[type="password"] {
+	margin-top: 20px;
+	width: 350px;
+	height: 40px;
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 10px;
+	color: white;
+	background-color: #2f323b;
+	border: 1px solid white;
+}
+
+button {
+	margin-top: 50px;
+	margin-left: 190px;
+	width: 200px;
+	padding: 10px;
+	font-size: 16px;
+	background-color: #2f323b;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #000000;
+}
+
+.additional-info h1 {
+	position: absolute;
+	color: #fff;
+	/* Text color */
+	font-size: 10px;
+	/* Adjust font size as needed */
+	margin-top: 25%;
+	margin-left: 55%;
+	font-family: Italiana;
+	font-size: 50px;
+}
+
+
+.memberbutton button {
+	font-size: 40px;
+	width: 300px;
+	height: 80px;
+	position: absolute;
+	color: #fff;
+	/* Text color */
+	margin-top: 32%;
+	margin-left: 58%;
+	font-family: Italiana;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.additional-info button:hover {
+	background-color: #ffffff;
+}

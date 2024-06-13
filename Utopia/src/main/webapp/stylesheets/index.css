@@ -1,0 +1,352 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	height: 100vh;
+	/* Make the body fill the viewport height */
+}
+
+/* .front-image and child elements */
+.front-image {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.front-image img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+	z-index: 0;
+	/* Lower z-index */
+	container: cover;
+}
+
+/* .utopia-header styling */
+.utopia-header {
+	position: absolute;
+	top: 5px;
+	/* Adjust positioning as needed */
+	left: 50%;
+	/* Center the header horizontally */
+	transform: translateX(-50%);
+	z-index: 1;
+	/* Higher z-index */
+}
+
+.utopia-header h1 {
+	font-size: 70px;
+	font-family: Italiana;
+	font-weight: lighter;
+	color: white;
+}
+
+.navlinks {
+	margin-left: 350px;
+	width: 100%;
+	position: absolute;
+	top: 150px;
+	/* Position right below the header, adjust values as needed */
+	left: 50%;
+	/* Center the navigation bar horizontally */
+	transform: translateX(-50%);
+	z-index: 1;
+	/* Ensure it's on top of the image */
+}
+
+/* Styling the navigation links */
+.navlinks a {
+
+	color: white;
+	/* White color for visibility */
+	text-decoration: none;
+	font-size: 17px;
+	font-family: 'Lacquer', sans-serif;
+	margin: 0 50px;
+	/* Adjust margin between links as needed */
+}
+
+.image-content {
+	position: absolute;
+}
+
+.image-content h1 {
+	margin-top: 600px;
+	margin-left: 100px;
+	color: white;
+	font-family: Italiana;
+	font-weight: 10;
+	font-size: 60px;
+}
+
+.image-button {
+	position: absolute;
+	margin-top: 680px;
+	margin-left: 100px;
+	color: whitesmoke;
+	text-align: center;
+	border: 2px solid black;
+}
+
+.image-button button {
+	padding: 5px 30px 5px 30px;
+}
+
+.image-button h1 {
+	font-family: Italiana;
+	font-size: 20px;
+
+}
+
+.headertwo {
+	width: 100%;
+	text-align: center;
+}
+
+.headertext {
+	text-align: center;
+	background-color: rgb(182, 182, 182);
+	font-size: 20px;
+	font-weight: 10px;
+	font-family: Italiana;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Apply to the container holding the images */
+.table-Images {
+	margin-top: 5px;
+	display: flex;
+	/* Use CSS flexbox */
+	flex-wrap: wrap;
+	/* Wrap the items to the next line */
+	width: 100%;
+	/* Set the width of the area */
+	height: 670px;
+	/* Set the height of the area */
+}
+
+/* Set the default styles for each grid item */
+.grid-item {
+	overflow: hidden;
+	/* Handle overflow */
+	border: 2px solid #000;
+	/* Set border for all image containers */
+}
+
+
+.grid-item img {
+	width: 100%;
+	/* Make the image fill the width of the grid item */
+	height: 100%;
+	/* Make the image fill the height of the grid item */
+	object-fit: cover;
+	/* Cover the space, cropping if necessary */
+}
+
+/* Define specific width and height for each grid item */
+.item1 {
+	position: absolute;
+	width: 400px;
+	height: 200px;
+}
+
+.item2 {
+	position: absolute;
+	margin-left: 410px;
+	width: 450px;
+	height: 450px;
+}
+
+.item3 {
+	position: absolute;
+	margin-left: 870px;
+	width: 280px;
+	height: 250px;
+}
+
+.item4 {
+	position: absolute;
+	margin-left: 870px;
+	;
+	margin-top: 260px;
+	width: 280px;
+	height: 190px;
+}
+
+.item5 {
+	position: absolute;
+	margin-left: 1160px;
+	width: 287px;
+	height: 660px;
+}
+
+.item6 {
+	position: absolute;
+	margin-top: 210px;
+	width: 400px;
+	height: 450px;
+}
+
+.item7 {
+	position: absolute;
+	margin-top: 460px;
+	margin-left: 410px;
+	width: 560px;
+	height: 200px;
+}
+
+.item8 {
+	position: absolute;
+	margin-top: 460px;
+	margin-left: 980px;
+	width: 170px;
+	height: 200px;
+}
+
+.headerthree {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.headertextthree {
+	text-align: center;
+	background-color: rgb(182, 182, 182);
+	font-size: 20px;
+	font-weight: 10px;
+	font-family: Italiana;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.ourstories-images {
+	margin-top: 5px;
+	display: flex;
+	/* Use CSS flexbox */
+	flex-wrap: wrap;
+	/* Wrap the items to the next line */
+	width: 100%;
+	/* Set the width of the area */
+	height: 100px;
+	/* Set the height of the area */
+	overflow: hidden;
+	/* Handle overflow */
+	border: 2px solid #000;
+	width: 100%;
+	/* Make the image fill the width of the grid item */
+	height: 100%;
+	/* Make the image fill the height of the grid item */
+	object-fit: cover;
+	/* Cover the space, cropping if necessary */
+}
+
+
+.item9 {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 50%;
+	height: 400px;
+}
+
+.thirdpart {
+	margin-top: 5px;
+	display: flex;
+	/* Use CSS flexbox */
+	flex-wrap: wrap;
+	/* Wrap the items to the next line */
+	width: 100%;
+	/* Set the width of the area */
+	height: 800px
+}
+
+.ourstories-text {
+	position: absolute;
+	margin-left: 55%;
+	margin-top: 40px;
+}
+
+.ourstories-text h1 {
+	font-family: Italiana;
+	font-size: 70px;
+	font-weight: lighter;
+}
+
+.ourstories-text h2 {
+	margin-left: 90px;
+	font-family: Italiana;
+	font-size: 20px;
+	font-family: 'lacquer';
+}
+
+.ourstories-images2 {
+	margin-top: 5px;
+	display: flex;
+	/* Use CSS flexbox */
+	flex-wrap: wrap;
+	/* Wrap the items to the next line */
+	width: 100%;
+	/* Set the width of the area */
+	height: 100px;
+	/* Set the height of the area */
+	overflow: hidden;
+	/* Handle overflow */
+	border: 2px solid #000;
+	width: 100%;
+	/* Make the image fill the width of the grid item */
+	height: 100%;
+	/* Make the image fill the height of the grid item */
+	object-fit: cover;
+}
+
+
+.item10 {
+	position: absolute;
+	margin-top: 400px;
+	margin-left: 50%;
+	width: 50%;
+	height: 400px;
+}
+
+.ourstories-text2 {
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 480px;
+}
+
+.ourstories-text2 h1 {
+	font-family: Italiana;
+	font-size: 50px;
+	font-weight: lighter;
+	margin-left: 40px;
+}
+
+.footer-content {
+	width: 100%;
+	position: absolute;
+	background-color: #828282;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 10px;
+	font-family: Italiana;
+	margin-top: 10px;
+	height: 400px;
+
+}
+
+.footer-links {
+	color: #000;
+
+}
+
+/* LOGIN PAGE */
+
+/* .utopia-header styling */
+.login-container {
+	padding: 50px 50px 50px 50px;
+}
